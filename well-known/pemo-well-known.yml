@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of /.well-known/ across pemo.io, api.pemo.io, app.pemo.io
+note: >-
+  No /.well-known/ discovery documents are published. Probed security.txt,
+  openid-configuration, oauth-authorization-server, api-catalog, and
+  ai-plugin.json on all known hosts; every path returned HTTP 404. Pemo does not
+  currently publish a public developer/API surface (developer.pemo.io and
+  docs.pemo.io redirect to the authenticated app.pemo.io login gate; api.pemo.io
+  root returns 404). Absence recorded as valid data; no WellKnown pointer wired.
+hosts:
+- host: https://pemo.io
+- host: https://api.pemo.io
+- host: https://app.pemo.io
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
