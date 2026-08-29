@@ -11,6 +11,17 @@ description: >-
   developer API or documentation portal; this profile tracks the company's
   identity and public web surface in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/pemo/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
